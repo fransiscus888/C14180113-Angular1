@@ -6,5 +6,17 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  player=1
+  baris:number
+  kolom:number
+  board:String[]=["*****","*****","*****","*****","*****"]
+
+  play(){
+    
+
+
+
+
+  }
+
 }

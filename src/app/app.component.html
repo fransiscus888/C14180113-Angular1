@@ -1,5 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<p> 10 + 20 = </p>
+<h1>Latihan 1</h1>
+Giliran Player {{player}}<br /><br />
+Baris
+<input type="number" [(ngModel)]="baris"/><br /><br />
+kolom
+<input type="number" [(ngModel)]="kolom" />
+<button style="margin-left:10px;" (click)="play()">Add</button>
+
+<div *ngFor="let papan of board">
+  <p>{{papan}}</p>
+</div>
