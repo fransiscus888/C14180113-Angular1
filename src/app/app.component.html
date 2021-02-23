@@ -5,7 +5,9 @@ Baris
 kolom
 <input type="number" [(ngModel)]="kolom" />
 <button style="margin-left:10px;" (click)="play()">Add</button>
-
-<div *ngFor="let papan of board">
-  <p>{{papan}}</p>
+<br><br>
+<div *ngFor="let papan of board;index as a" >
+  <span *ngFor="let papan2 of papan;index as b">
+    {{papan2}}
+  </span>
 </div>
